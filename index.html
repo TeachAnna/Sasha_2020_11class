@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<!-- DUE TO SOME PIECE OF HEADER OR MAIN CONTAINER CAN BE DIFFERENT IT SHOULD BE SEPARATED -->
+
+	<style>
+
+		/* HEADER ZONE */
+
+		header {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.title-logo {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: sans-serif;
+
+		}
+
+		.title-logo-area {
+			width: 60vw;
+			height: 25vw;
+			background: #000;
+			color: white;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.title-logo-area h1 {
+			font-size: calc(10px + 5vw);
+			font-family: 'Seymour One', sans-serif;
+		}
+
+		.title-logo-area h2 {
+			font-size: calc(10px + 1vw);
+			font-family: 'Balsamiq Sans', cursive;
+		}
+
+		/* MAIN ZONE */
+
+		main {
+			display: flex;
+			flex-direction: column;
+			font-family: 'Balsamiq Sans', cursive;
+		}
+
+		content {
+			flex: 1;
+			margin: 15px;
+		}
+
+		.theme-list {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+		}
+
+		.theme-list-title {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: 'Balsamiq Sans', cursive;
+		}
+
+		.theme-list-item {
+			border: 4px solid black;
+			border-top-left-radius: 25px;
+			border-top-right-radius: 25px;
+			display: flex;
+			flex-direction: column;
+			width: 250px;
+			margin: 15px;
+			font-family: 'Balsamiq Sans', cursive;
+		}
+
+		.theme-list-item-header {
+			background: #fff;
+			border-top-right-radius: 25px;
+			border-top-left-radius: 25px;
+		}
+
+		.theme-list-item-header img {
+			border-top-right-radius: 25px;
+			border-top-left-radius: 25px;
+			width: 250px;
+			height: 250px;
+		}
+
+		.theme-list-item-body {
+			background: #000;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+
+		.theme-list-item-body .title {
+			text-align: center;
+		}
+
+		.theme-list-item-body .button {
+			margin: 15px;
+		}
+
+		.theme-list-item-body .button a button {
+			width: 150px;
+			height: 50px;
+			color: white;
+			background: #000;
+			border: 4px solid white;
+			font-weight: bold;
+		}
+
+		.theme-list-item-body .button a button:hover {
+			color: black;
+			background: #fff;
+			border: 4px solid black;
+		}
+
+		.info {
+			margin: auto;
+			width: 50%;
+		}
+
+		.info summary {
+			background: #000;
+			color: #fff;
+			padding: 15px;
+			margin: 3%;
+		}
+
+		.info details {
+			background: #fff;
+		}
+
+		.video {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-bottom: 15px;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+	</style>
+
+	<link rel="stylesheet" type="text/css" href="media/css/style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main Page</title>
+</head>
+<body>
+	<div class="upper">
+		<a href="#logo-anchor"><img src="media/images/upper.png" alt=""></a>
+	</div>
+	<div class="wrapper">
+		<header id="logo-anchor">
+			<nav>
+				<ul>
+					<li><a href="index.html"><button>Головна</button></a></li>
+					<li><a href="crib.html"><button>Шпаргалкі</button></a></li>
+					<li><a href="zno.html"><button>ЗНО</button></a></li>
+					<li><a href="contact.html"><button>Контакти</button></a></li>
+				</ul>
+			</nav>
+			<div class="title-logo">
+				<div class="title-logo-area">
+					<h2>Головна: остання тема</h2>
+					<h1>Відсотки</h1>
+				</div>
+			</div>
+		</header>
+		<main>
+			<content>
+				<div class="theme-list-title">
+					<h2>Доступні теми:</h2>
+				</div>
+				<div class="theme-list">
+
+					<div class="theme-list-item">
+						<div class="theme-list-item-header">
+							<img src="media/images/percent.jpg" alt="">
+						</div>
+						<div class="theme-list-item-body">
+							<div class="title">
+								<h3>Відсотки</h3>
+							</div>
+							<div class="button">
+								<a href="themes/percent.html"><button>Перейти</button></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="theme-list-item">
+						<div class="theme-list-item-header">
+							<img src="media/images/circle.png" alt="">
+						</div>
+						<div class="theme-list-item-body">
+							<div class="title">
+								<h3>Дроби</h3>
+							</div>
+							<div class="button">
+								<a href="themes/fraction.html"><button>Перейти</button></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="theme-list-item">
+						<div class="theme-list-item-header">
+							<img src="media/images/square-number.png" alt="">
+						</div>
+						<div class="theme-list-item-body">
+							<div class="title">
+								<h3>Степінь</h3>
+							</div>
+							<div class="button">
+								<a href="themes/power.html"><button>Перейти</button></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="theme-list-item">
+						<div class="theme-list-item-header">
+							<img src="media/images/proportion.gif" alt="">
+						</div>
+						<div class="theme-list-item-body">
+							<div class="title">
+								<h3>Пропорції</h3>
+							</div>
+							<div class="button">
+								<a href="themes/proportion.html"><button>Перейти</button></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="theme-list-item">
+						<div class="theme-list-item-header">
+							<img src="media/images/multinumber.png" alt="">
+						</div>
+						<div class="theme-list-item-body">
+							<div class="title">
+								<h3>Многочлен</h3>
+							</div>
+							<div class="button">
+								<a href="themes/polynomial.html"><button>Перейти</button></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="theme-list-item">
+						<div class="theme-list-item-header">
+							<img src="media/images/simpler.png" alt="">
+						</div>
+						<div class="theme-list-item-body">
+							<div class="title">
+								<h3>Формули скороченного множення</h3>
+							</div>
+							<div class="button">
+								<a href="themes/shorted.html"><button>Перейти</button></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="theme-list-item">
+						<div class="theme-list-item-header">
+							<img src="media/images/module.png" alt="">
+						</div>
+						<div class="theme-list-item-body">
+							<div class="title">
+								<h3>Модуль</h3>
+							</div>
+							<div class="button">
+								<a href="themes/module.html"><button>Перейти</button></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="theme-list-item">
+						<div class="theme-list-item-header">
+							<img src="media/images/root.jpg" alt="">
+						</div>
+						<div class="theme-list-item-body">
+							<div class="title">
+								<h3>Корень</h3>
+							</div>
+							<div class="button">
+								<a href="themes/root.html"><button>Перейти</button></a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</content>
+			<div class="info">
+			<h2>Цікава математика</h2>
+				<details>
+					<summary>Факти</summary>
+					<ol>
+						<li>Вся математична інформація розміщена у величезній кількості книг: на сьогодні, їх більше 100 000.</li>
+						<li> Перша у світі жінка-математик жила ще за півтисячоліття до нашої ери в Стародавній Візантії і звали її Гіпатія.</li>
+						<li>У перекладі з арабської «цифра» означає «нуль», але історично так склалося, що цим словом ми називаємо в принципі всі цифри.</li>
+						<li>Наймістичнішим і оповитим легендами числом вважається 666 — число звіра і антихриста (назване так в одному з віршів книги Одкровення). З ним пов'язана велика кількість цікавих математичних фактів:
+							<ul>
+								<li>Сума всіх чисел на рулетці дорівнює 666;</li>
+								<li>У Європарламенті є крісло 666, але його за традицією ніхто не займає;</li>
+								<li>У великої кількості об'єктів по всьому світу замінили число 666 на інше, у зв'язку з протестами вірян. Це стосується номерів шосейних трас, маршрутів громадського транспорту, телефонних кодів.</li>
+							</ul>
+						</li>
+						<li>Найдавніша математична праця була знайдена не на території Стародавнього Риму або Олександрії, а в Свазіленді, і являє собою кістку бабуїна з вибитими на ній рисками, її вік складає майже 40 000 років.</li>
+						<li>Від'ємні числа аж до XIX століття майже не використовувалися, тому що їх вважали безглуздими і не застосовними. Однак вони мали попит у людей, які ведуть свої справи, для позначення фінансових збитків. Від'ємні числа так і з'явилися на початку XIII століття — італійський купець Пізано винайшов їх для того, щоб фіксувати свої борги.</li>
+						<li>Релігійні євреї прагнуть уникати християнської символіки і взагалі знаків, схожих на хрест. Наприклад, учні деяких ізраїльських шкіл замість знака «плюс» пишуть знак, що повторює перевернуту букву «т».</li>
+						<li>Італійці не люблять число 17. Це пішло з часів стародавнього Риму, коли на всіх надгробках писали напис «мене більше немає», який візуально мав вигляд «VIXI», тобто як римські цифри 6 і 11, які в сумі дають 17.</li>
+						<li>Деякі числа нескінченної послідовності числа ПІ мають імена вчених. Наприклад, відрізок «999999» названий на честь американського фізика Річарда Фейнмана, який вивчив всі числа після коми до дев'яток, щоб в кінці вимовити «9» шість разів.</li>
+						<li>Найбільшим числом у світі вважається центильйон, він має 600 нулів.</li>
+					</ol>
+
+				</details>
+				<details>
+					<summary>Рекорди</summary>
+					<ul>
+						<li><b>Число Пі </b>Рекорд 2011 року за найточнішому обчисленню числа «пі» поки не побитий. Однак є інші рекордсмени, яким число «пі» допомогло в демонстрації феноменальних здібностей. Так світовий рекорд із запам'ятовування знаків числа «пі» після коми належить китайцю Лю Чао. У 2006 році він відтворив 67 890 знаків після коми без помилки. Цей процес зайняв у нього 24 години і 4 хвилини.</li>
+						<li><b>Найбільше число в фізиці </b>Ще одним числом, які претендують на максимальну точність, було передбачуване число протонів і електронів у Всесвіті. Англійський астроном Артур Еддінгтон з повною серйозністю заявив, що йому вдалося обчислити це число, і дорівнює воно 15 747 724 136 275 002 577 605 653 961 181 555 468 044 717 914 527 116 709 366 231 425 076 185 631 031 296. Правда, з цими надточними підрахунками не погодилися і всерйоз не сприйняли.</li>
+						<li><b>Велика теорема Ферма </b>Це завдання визнана однією з найскладніших в математичної історії. 350 років нікому не вдавалося ніхто не міг довести гіпотезу математика XVII століття П'єра Ферма. Генію, яке здійснило цей науковий подвиг, була обіцяна Міжнародна премія короля Фейсала. І ось в 1998 році ці 200 000 доларів отримав англієць Ендрю Уайлз, що працює в Прінстонському університеті - він зміг вирішити теорему, що потрапила в Книгу рекордів Гіннеса за свою «живучість». До речі, премія пережила інфляцію: в 1908 році нагорода була заявлена ​​як 100 000 німецьких марок і була найбільшою премією, але в результаті інфляції вона стала дорівнювати 10 000 німецьких марок.</li>
+						<li><b>Найшвидші обчислення в розумі </b>Йоган Дазе міг за 54 секунди помножити в думці два 8-значних числа, два 6-значних числа - за 6 хвилин, а два 40-значних за 40 хвилин. При цьому інші області математики Дазе так і не далися - сильний він був тільки в множенні великих чисел. Житель Нової Зеландії Олександр кейгени за 2 секунди звів в квадрат число 57586. Крім того, він міг запам'ятати значення числа з точністю до 1000 знаків після коми.</li>
+						<li><b>Mатематична пам'ять </b>Одного разу математик Леонард Ейлер довго не міг заснути вночі. Але замість того, щоб спробувати лічити про себе овечок, Ейлер в розумі обчислив перші 6 ступенів всіх цілих чисел від 1 до 20. Отримані результати він міг повторити напам'ять через кілька днів. Більш того, математик може стати відмінним прикладом творчої працездатності. За своє життя він написав стільки, що через 50 років після його смерті його праці продовжували друкуватися вперше. В результаті зібрання його творів склало 75 томів.</li>
+						<li><b>Теореми-рекордсмени </b>Теорема Піфагора може похвалитися найбільшою кількістю доказів. У книзі, опублікованій в 1940 році, міститься 370 різних способів доказів, одне з яких запропонував сам президент США Гарфілд. А доказ класифікації всіх кінцевих простих груп зайняло більше 14 000 сторінок. Вони містили близько 500 наукових робіт, над якими працювали понад 100 математиків. Саме доказ тривало довше 35 років.</li>
+					</ul>
+				</details>
+				<details>
+					<summary>Відомі вислови відомих математиков</summary>
+					<ul>
+						<li><i>Математика — це мова плюс роздум. (Р. Фейнман)</i></li>
+						<li><i>Математика — це велична споруда, створена уявленнями людини, для пізнання Всесвіту. (Ле Корбюз’є)</i></li>
+						<li><i>Серед всіх наук, які відкривають шлях до пізнання законів природи, найбільшої є математика. (С. Ковалевська)</i></li>
+						<li><i>Алгебра — інтелектуальний інструмент, який створений, щоб додати ясність кількісному аспекту миру. (А. Уайтхед)</i></li>
+						<li><i>За допомогою рівнянь, теорем Я безліч всяких вирішив проблем. (Чосер, англійський поет, середні століття)</i></li>
+						<li><i>Математика є праобраз краси миру. (І. Кеплер)</i></li>
+						<li><i>Математик повинен бути поетом в душі. (С. Ковалевські)</i></li>
+						<li><i>Математика володіє не тільки істиною, але і вищою красою, холодною і суворою, подібною красі скульптури. (Б. Рассел)</i></li>
+						<li><i>Цифри не управляють світом, але вони показують, як управляється світ. (І. Гете)</i></li>
+						<li><i>Навіть найплоскіша людина, на жаль, існує в трьох вимірюваннях. (СЕ. Лец)</i></li>
+					</ul>
+				</details>
+			</div>
+			<h2>Відео про математику</h2>
+
+			<div class="video">
+		<iframe width="400" height="270" src="https://www.youtube.com/embed/BNG1p6FRfEA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="400" height="270" src="https://www.youtube.com/embed/nanlYwx4oD8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="400" height="270" src="https://www.youtube.com/embed/sq9CoVk9IUg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="400" height="270" src="https://www.youtube.com/embed/kF14qJbRXds" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+		</main>
+		<footer>
+			&copy Limemix 2020. All rights reserved.
+		</footer>
+	</div>
+</body>
+</html>
